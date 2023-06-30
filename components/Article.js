@@ -17,11 +17,13 @@ const Article = ({ title, multimedia, published_date, byline }) => {
               {moment(published_date)
                 .fromNow()
                 .replace('hours', 'h')
+                .replace('minutes', 'm')
+                .replace('seconds', 'sec')
                 .replace(' ', '')}
             </Text>
             <Entypo name='dot-single' size={14} color='white' />
             <Text className='text-white italic'>
-              {byline.replace('By ', '')}
+              {byline ? byline.replace('By ', '') : 'New York Times'}
             </Text>
           </View>
           <View className='flex-row gap-6'>
