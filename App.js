@@ -1,16 +1,16 @@
 import { SafeAreaView } from 'react-native'
 import { NavigationContainer } from '@react-navigation/native'
-import Homescreen from './screens/Homescreen'
 import { RecoilRoot } from 'recoil'
+import NewsScreen from './screens/NewsScreen'
 
 export default function App() {
   return (
-    <RecoilRoot>
-      <NavigationContainer>
+    <NavigationContainer>
+      <RecoilRoot>
         <SafeAreaView className='bg-zinc-900 flex-1'>
-          <Homescreen />
+          <NewsScreen />
         </SafeAreaView>
-      </NavigationContainer>
-    </RecoilRoot>
+      </RecoilRoot>
+    </NavigationContainer>
   )
 }
