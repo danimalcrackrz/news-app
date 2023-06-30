@@ -6,8 +6,8 @@ import { NEWSSTATE } from '../atoms'
 const Newslist = () => {
   const articleList = useRecoilValue(NEWSSTATE)
   return (
-    <View className='p-2 flex-shrink'>
-      <Text className='text-blue-600 text-4xl font-bold capitalize mb-2'>
+    <View className='p-4 flex-shrink'>
+      <Text className='text-white text-4xl font-bold capitalize mb-2'>
         top stories
       </Text>
       <FlatList
