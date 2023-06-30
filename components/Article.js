@@ -16,9 +16,13 @@ const Article = ({ title, multimedia, published_date, byline }) => {
             <Text className='text-white'>
               {moment(published_date)
                 .fromNow()
+                .replace('an', '1')
                 .replace('hours', 'h')
+                .replace('hour', 'h')
                 .replace('minutes', 'm')
+                .replace('minute', 'm')
                 .replace('seconds', 'sec')
+                .replace('second', 'sec')
                 .replace(' ', '')}
             </Text>
             <Entypo name='dot-single' size={14} color='white' />
