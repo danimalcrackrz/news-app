@@ -1,7 +1,6 @@
 import { ScrollView, Text, TouchableOpacity } from 'react-native'
-import React from 'react'
 
-const SportsNavigator = () => {
+const Sportsnavigator = () => {
   const sports = [
     { name: 'All', to: '/' },
     { name: 'NFL', to: '/nfl' },
@@ -22,9 +21,9 @@ const SportsNavigator = () => {
       className=' bg-zinc-900'
       contentContainerStyle={{
         flex: 1,
-        gap: 20,
+        gap: 40,
         justifyContent: 'space-between',
-        padding: 20,
+        padding: 10,
       }}>
       {sports.map((sport, i) => (
         <TouchableOpacity key={i} className=''>
@@ -35,4 +34,4 @@ const SportsNavigator = () => {
   )
 }
 
-export default SportsNavigator
+export default Sportsnavigator
