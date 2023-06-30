@@ -1,9 +1,11 @@
-import { View, Text, Image } from 'react-native'
+import { View, Text, Image, TouchableOpacity } from 'react-native'
 import moment from 'moment'
 import { Entypo } from '@expo/vector-icons'
 import { Ionicons } from '@expo/vector-icons'
+import { useState } from 'react'
 
 const Article = ({ title, multimedia, published_date, byline }) => {
+  const [isBookmark, setBookmark] = useState(false)
   return (
     <View className='mt-1 mb-1 rounded-lg overflow-hidden'>
       <Image className='h-60' src={multimedia[0].url} />
@@ -24,7 +26,23 @@ const Article = ({ title, multimedia, published_date, byline }) => {
           </View>
           <View className='flex-row gap-6'>
             <Ionicons name='ios-share-outline' size={26} color='white' />
-            <Ionicons name='md-bookmark-outline' size={26} color='white' />
+            {isBookmark ? (
+              <TouchableOpacity onPress={() => setBookmark(!isBookmark)}>
+                <Text>
+                  <Ionicons name='md-bookmark' size={26} color='red' />
+                </Text>
+              </TouchableOpacity>
+            ) : (
+              <TouchableOpacity onPress={() => setBookmark(!isBookmark)}>
+                <Text>
+                  <Ionicons
+                    name='md-bookmark-outline'
+                    size={26}
+                    color='white'
+                  />
+                </Text>
+              </TouchableOpacity>
+            )}
           </View>
         </View>
       </View>
