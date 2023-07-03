@@ -2,7 +2,7 @@
 
 <img src="https://github.com/danimalcrackrz/sports-app/blob/78482450a577d1e6e25c3720e18abe8bfd5a84a2/assets/Simulator%20Screenshot%20-%20iPhone%2014%20Pro%20Max%20-%202023-07-02%20at%2022.25.09.png" alt="Alt Text" width="400" height="800">
 
-The sports app is a mobile application developed using React Native and Expo. It serves as a comprehensive sports news platform, allowing users to browse and read articles from various sources. By leveraging third-party APIs, the app fetches the latest news headlines and presents them in a visually appealing and user-friendly manner.
+The news app is a mobile application developed using React Native and Expo. It serves as a comprehensive sports news platform, allowing users to browse and read articles from various sources. By leveraging third-party APIs, the app fetches the latest news headlines and presents them in a visually appealing and user-friendly manner.
 
 The user interface is designed using Tailwind CSS, a utility-first CSS framework, to ensure a modern and responsive layout. Future Plans for the app is to offer a range of features, including categorized news, article details with author and publication information, search functionality, bookmarking, and sharing options. Users will be able to customize their news feed based on their preferences and adjust settings according to their needs.
 
