@@ -8,7 +8,7 @@ import { NY_TIMES_API_KEY } from '@env'
 
 //The possible section value are: arts, automobiles, books/review, business, fashion, food, health, home, insider, magazine, movies, nyregion, obituaries, opinion, politics, realestate, science, sports, sundayreview, technology, theater, t-magazine, travel, upshot, us, and world. *** use Home to get articles from the home page.***
 
-const Newsfeed = () => {
+const Newsscreen = () => {
   const [articles, setArticles] = useRecoilState(NEWSSTATE)
 
   useEffect(() => {
@@ -30,4 +30,4 @@ const Newsfeed = () => {
   )
 }
 
-export default Newsfeed
+export default Newsscreen
