@@ -1,4 +1,4 @@
-# sports-app
+# news-app
 
 <img src="https://github.com/danimalcrackrz/sports-app/blob/78482450a577d1e6e25c3720e18abe8bfd5a84a2/assets/Simulator%20Screenshot%20-%20iPhone%2014%20Pro%20Max%20-%202023-07-02%20at%2022.25.09.png" alt="Alt Text" width="400" height="800">
 
