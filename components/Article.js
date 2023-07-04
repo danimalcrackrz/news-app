@@ -27,7 +27,7 @@ const Article = ({ title, multimedia, published_date, byline }) => {
             </Text>
             <Entypo name='dot-single' size={14} color='white' />
             <Text className='text-white italic'>
-              {byline ? byline.replace('By ', '') : 'New York Times'}
+              {byline.replace('By ', '').split('and ')[0]}
             </Text>
           </View>
           <View className='flex-row gap-6'>

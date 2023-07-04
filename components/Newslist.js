@@ -7,12 +7,10 @@ const Newslist = () => {
   const articleList = useRecoilValue(NEWSSTATE)
   return (
     <View className='p-4 flex-shrink'>
-      <Text className='text-white text-4xl font-bold capitalize mb-2'>
+      <Text className='text-white text-4xl font-bold capitalize mb-4'>
         top stories
       </Text>
-
       <FlatList
-        className=''
         data={articleList}
         renderItem={({ item }) => <Article {...item} />}
         keyExtractor={(item) => item.id}
