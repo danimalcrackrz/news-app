@@ -1,7 +1,6 @@
 import { View } from 'react-native'
 import { useEffect } from 'react'
 import Newslist from '../components/Newslist'
-import Nav from '../components/Nav'
 import { useRecoilState } from 'recoil'
 import { NEWSSTATE } from '../atoms'
 import { NY_TIMES_API_KEY } from '@env'
@@ -25,7 +24,6 @@ const Newsscreen = () => {
   return (
     <View className=''>
       <Newslist />
-      <Nav />
     </View>
   )
 }
