@@ -10,11 +10,12 @@ const Newslist = () => {
       <Text className='text-white text-4xl font-bold capitalize mb-2'>
         top stories
       </Text>
+
       <FlatList
         className=''
         data={articleList}
         renderItem={({ item }) => <Article {...item} />}
-        keyExtractor={(item) => item.created_date}
+        keyExtractor={(item) => item.id}
       />
     </View>
   )
