@@ -22,7 +22,7 @@ const Newsscreen = () => {
   }, [])
 
   return (
-    <View className=''>
+    <View className='bg-zinc-900'>
       <Newslist />
     </View>
   )
