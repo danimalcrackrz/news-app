@@ -13,7 +13,6 @@ const Newslist = () => {
       <FlatList
         data={articleList}
         renderItem={({ item }) => <Article {...item} />}
-        keyExtractor={(item) => item.id}
       />
     </View>
   )
