@@ -2,7 +2,9 @@ import { SafeAreaView } from 'react-native'
 import { NavigationContainer } from '@react-navigation/native'
 import { RecoilRoot } from 'recoil'
 import Newsscreen from './screens/Newsscreen'
-import Sportsscreen from './screens/Sportsscreen'
+import Scoresscreen from './screens/Scoresscreen'
+import Discoverscreen from './screens/Discoverscreen'
+import Favoritesscreen from './screens/Favoritesscreen'
 import { createBottomTabNavigator } from '@react-navigation/bottom-tabs'
 import { MaterialCommunityIcons } from '@expo/vector-icons'
 
@@ -17,8 +19,12 @@ export default function App() {
             initialRouteName='News'
             screenOptions={{
               headerShown: false,
-              tabBarActiveTintColor: '#08fdd8',
-              tabBarStyle: { backgroundColor: '#18181b' },
+              tabBarActiveTintColor: 'red',
+              tabBarStyle: {
+                backgroundColor: '#18181b',
+                borderTopWidth: 0,
+              },
+              tabBarLabelStyle: { fontSize: 12, fontWeight: 700 },
             }}>
             <Tab.Screen
               name='News'
@@ -27,7 +33,7 @@ export default function App() {
                 tabBarIcon: () => (
                   <MaterialCommunityIcons
                     name='newspaper-variant-outline'
-                    size={24}
+                    size={30}
                     color='white'
                   />
                 ),
@@ -41,22 +47,22 @@ export default function App() {
                 tabBarIcon: () => (
                   <MaterialCommunityIcons
                     name='scoreboard-outline'
-                    size={24}
+                    size={30}
                     color='white'
                   />
                 ),
               }}
-              component={Sportsscreen}
+              component={Scoresscreen}
             />
             <Tab.Screen
               name='Favorites'
               options={{
                 tabBarLabel: 'Favorites',
                 tabBarIcon: () => (
-                  <MaterialCommunityIcons name='star' size={24} color='white' />
+                  <MaterialCommunityIcons name='star' size={30} color='white' />
                 ),
               }}
-              component={Sportsscreen}
+              component={Favoritesscreen}
             />
             <Tab.Screen
               name='Discover'
@@ -65,12 +71,12 @@ export default function App() {
                 tabBarIcon: () => (
                   <MaterialCommunityIcons
                     name='compass'
-                    size={24}
+                    size={30}
                     color='white'
                   />
                 ),
               }}
-              component={Sportsscreen}
+              component={Discoverscreen}
             />
           </Tab.Navigator>
         </SafeAreaView>
